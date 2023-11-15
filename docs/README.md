@@ -187,3 +187,190 @@ Author: smartiqa <info@smartiqa.ru>
 Date:   Thu Mar 4 14:54:08 2021 +0300
 
     L-03: Circle and square added
+
+## UnitTest
+### Rectangle.py
+- area()
+###### Correct tests
+~~~
+input: 5,8
+output: 40
+~~~
+~~~
+input: 5.5, 9.9
+output: 54.45
+~~~
+~~~
+input: 10, 0
+output: 0
+~~~
+###### Incorrect tests
+~~~
+input: 8, -4
+output: -32
+expected: The sides of the rectangle cannot be negative
+~~~
+- perimeter()
+###### Correct tests
+~~~
+input: 5,7
+output: 24
+~~~
+~~~
+input: 5.5, 6.6
+output: 24.2
+~~~
+~~~
+input: 5, 0
+output: 10
+~~~
+###### Incorrect tests
+~~~
+input: 5, -6
+output: -2
+expected: The sides of the rectangle cannot be negative
+~~~
+### Triangle.py
+- area()
+###### Correct tests
+~~~
+input: 3,8
+output: 12
+~~~
+~~~
+input: 8.8, 6.6
+output: 29.04
+~~~
+~~~
+input: 8, 0
+output: 0
+~~~
+###### Incorrect tests
+~~~
+input: 10, -8
+output: -40
+expected: The base and height cannot be negative
+~~~
+- perimeter()
+###### Correct tests
+~~~
+input: 6, 7, 8
+output: 21
+~~~
+~~~
+input: 7.7, 2.5, 9
+output: 19.2
+~~~
+~~~
+input: 6, 4, 6.6
+output: 16.6
+~~~
+###### Incorrect tests
+~~~
+input: 8, -3, 4
+output: 9
+expected: The base and height cannot be negative
+~~~
+### Circle.py
+- area()
+###### Correct tests
+~~~
+input: 3
+output: 28.274333882308138
+~~~
+~~~
+input: 3.3
+output: 34.21194399759285
+~~~
+~~~
+input: 0
+output: 0
+~~~
+###### Incorrect tests
+~~~
+input: -3
+output: -28.274333882308138
+expected: The radius cannot be negative
+~~~
+- perimeter()
+###### Correct tests
+~~~
+input: 3
+output: 18.84955592153876
+~~~
+~~~
+input: 3.3
+output: 20.734511513692635
+~~~
+~~~
+input: 0
+output: 0
+~~~
+###### Incorrect tests
+~~~
+input: -3
+output: -18.84955592153876
+expected: The radius cannot be negative
+~~~
+### Square.py
+- area()
+###### Correct tests
+~~~
+input: 8
+output: 64
+~~~
+~~~
+input: 8.8
+output: 77.44000000000001
+~~~
+~~~
+input: 0
+output: 0
+~~~
+###### Incorrect tests
+~~~
+input: -8
+output: -64
+expected: The side of the square cannot be negative
+~~~
+- perimeter()
+###### Correct tests
+~~~
+input: 8
+output: 32
+~~~
+~~~
+input: 8.8
+output: 35.2
+~~~
+~~~
+input: 0
+output: 0
+~~~
+###### Incorrect tests
+~~~
+input: -8
+output: -32
+expected: The side of the square cannot be negative
+~~~
+
+## Autotests succes:
+~~~
+- 32 - all tests;
+- 8 - tests with errors;
+- 24 - tests without errors;
+~~~
+- P with errors = 8/32 = 0,25
+- P without errors = 24/32 = 0,75
+~~~
+- Tests with errors = 25%
+- Tests without errors = 75%
+~~~
+
+## GIT LOG:
+| Автор | Дата | Хэш | Комментарий |
+|---|---|---| --- |
+| Viktoria Obukhova |Wed Nov 15 22:43:23 2023 +0300 | 44c0a29b7a890ddf18b8b555c2a6cf6731aa26d8|test: added tests for rectangle|
+| Viktoria Obukhova | Wed Nov 15 22:43:23 2023 +0300 | 552a9c79962213041df1d4e883980b9979f0555e |test: added tests for triangle|
+| Viktoria Obukhova | Wed Nov 15 22:43:23 2023 +0300 | 671aaa9298059dc32ca03b0efc6e277fdf21d504 | test: added tests for circle|
+| Viktoria Obukhova | Wed Nov 15 22:43:23 2023 +0300 | 2b2926eacefabe4c5334a0e727595729cae385e4 | test: added tests for square|
