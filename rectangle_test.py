@@ -6,8 +6,8 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 40)
 
     def test_rectangle_area_negative(self):
-		with self.assertRaises(TypoError):
-			rectangle_area(-1, -1)
+	with self.assertRaises(TypoError):
+	    rectangle_area(-1, -1)
 
     def test_rectangle_area_real(self):
         res = area(5.5, 9.9)
