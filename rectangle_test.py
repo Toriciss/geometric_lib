@@ -6,8 +6,8 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 40)
 
     def test_rectangle_area_negative(self):
-        res = area(8, -4)
-        self.assertEqual(res,"Error")
+		with self.assertRaises(TypoError):
+			rectangle_area(-1, -1)
 
     def test_rectangle_area_real(self):
         res = area(5.5, 9.9)
@@ -22,8 +22,8 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 24)
 
     def test_rectangle_perimeter_negative(self):
-        res = perimeter(5, -6)
-        self.assertEqual(res, "Error")
+        with self.assertRaises(TypoError):
+            rectangle_perimeter(5, -6)
 
     def test_rectangle_perimeter_real(self):
         res = perimeter(5.5, 6.6)
