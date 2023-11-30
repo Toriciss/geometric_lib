@@ -7,7 +7,7 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_triangle_area_negative(self):
         res = area(10, -8)
-        self.assertEqual(res, "The base and height cannot be negative")
+        self.assertEqual(res, "Error")
 
     def test_triangle_area_real(self):
         res = area(8.8, 6.6)
@@ -23,7 +23,7 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_triangle_perimeter_negative(self):
         res = perimeter(8, -3, 4)
-        self.assertEqual(res, "The base and height cannot be negative")
+        self.assertEqual(res, "Error")
 
     def test_triangle_perimeter_real(self):
         res = perimeter(7.7, 2.5, 9)
