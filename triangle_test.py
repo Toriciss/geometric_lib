@@ -6,8 +6,8 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 12)
 
     def test_triangle_area_negative(self):
-        res = area(10, -8)
-        self.assertEqual(res, "Error")
+        with self.assertEqual(TypoError):
+            perimeter(10, -8)
 
     def test_triangle_area_real(self):
         res = area(8.8, 6.6)
@@ -22,9 +22,9 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res,21)
 
     def test_triangle_perimeter_negative(self):
-        res = perimeter(8, -3, 4)
-        self.assertEqual(res, "Error")
-
+        with self.assertEqual(TypoError):
+            perimeter(8, -3, 4)
+        
     def test_triangle_perimeter_real(self):
         res = perimeter(7.7, 2.5, 9)
         self.assertEqual(res, 19.2)
