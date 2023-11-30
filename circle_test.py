@@ -8,7 +8,7 @@ class CircleTestCase(unittest.TestCase):
 
     def test_circle_area_negative(self):
         res = area(-3)
-        self.assertEqual(res, "The radius cannot be negative")
+        self.assertEqual(res, "Error")
 
     def test_circle_area_real(self):
         res = area(3.3)
@@ -24,7 +24,7 @@ class CircleTestCase(unittest.TestCase):
 
     def test_circle_perimeter_negative(self):
         res = perimeter(-3)
-        self.assertEqual(res, "The radius cannot be negative")
+        self.assertEqual(res, "Error")
 
     def test_circle_perimeter_real(self):
         res = perimeter(3.3)
