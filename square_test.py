@@ -8,7 +8,7 @@ class SquareTestCase(unittest.TestCase):
 
     def test_square_area_negative(self):
         res = area(-8)
-        self.assertEqual(res, "The side of the square cannot be negative")
+        self.assertEqual(res, "Error")
 
     def test_square_area_real(self):
         res = area(8.8)
@@ -24,7 +24,7 @@ class SquareTestCase(unittest.TestCase):
 
     def test_square_perimeter_negative(self):
         res = perimeter(-8)
-        self.assertEqual(res,"The side of the square cannot be negative")
+        self.assertEqual(res,"Error")
 
     def test_square_perimeter_real(self):
         res = perimeter(8.8)
