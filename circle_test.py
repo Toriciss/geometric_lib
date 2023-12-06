@@ -1,5 +1,6 @@
 import unittest
-from circle import area,perimeter
+from circle import area
+from circle import perimeter
 
 class CircleTestCase(unittest.TestCase):
     def test_circle_area_positive(self):
@@ -13,6 +14,7 @@ class CircleTestCase(unittest.TestCase):
     def test_circle_area_zero(self):
         res = area(0)
         self.assertEqual(res, 0)
+
 
     def test_circle_perimeter_positive(self):
         res = perimeter(3)
