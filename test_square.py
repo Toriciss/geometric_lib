@@ -25,7 +25,7 @@ class SquareTestCase(unittest.TestCase):
 
     def test_square_perimeter_negative(self):
         with self.assertRaises(ValueError):
-            area(-8)
+            perimeter(-8)
 
     def test_square_perimeter_real(self):
         res = perimeter(8.8)
