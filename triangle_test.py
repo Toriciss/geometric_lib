@@ -1,5 +1,7 @@
 import unittest
-from triangle import area, perimeter
+from triangle import area
+from triangle import perimeter
+
 class TriangleTestCase(unittest.TestCase):
     def test_triangle_area_positive(self):
         res = area(3, 8)
