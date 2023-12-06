@@ -27,5 +27,4 @@ class CircleTestCase(unittest.TestCase):
     def test_circle_perimeter_zero(self):
         res = perimeter(0)
         self.assertEqual(res, 0)
-if __name__ == '__main__':
-    unittest.main()
+
