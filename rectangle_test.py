@@ -1,5 +1,7 @@
 import unittest
-from rectangle import area, perimeter
+from rectangle import area
+from rectangle import perimeter
+
 class RectangleTestCase(unittest.TestCase):
     def test_rectangle_area_positive(self):
         res = area(5, 8)
